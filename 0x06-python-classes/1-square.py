@@ -3,6 +3,10 @@
 
 class Square:
     """ defines a function called __init__ """
+
     def __init__(self, size):
-        """ initializes __size of self with size"""
+        """ Initialize a new Square.
+
+        Args:
+            size (int): The size of the new square."""
         self.__size = size
