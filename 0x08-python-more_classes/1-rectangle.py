@@ -16,22 +16,6 @@ class Rectangle:
 
         @property
         def width(self):
-            """get/set the width of the rectangle"""
-            return self._width
-
-        @width.setter
-        def width(self, value):
-        """
-            Checking for TypeError and ValueError and sets up the private var
-        """
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
-
-        @property
-        def width(self):
             """get/set the height of the rectangle"""
             return self._height
 
@@ -45,3 +29,19 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+        @property
+        def width(self):
+            """get/set the width of the rectangle"""
+            return self._width
+
+        @width.setter
+        def width(self, value):
+        """
+            Checking for TypeError and ValueError and sets up the private var
+        """
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
