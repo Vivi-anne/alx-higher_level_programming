@@ -3,7 +3,12 @@
 
 
 class Rectangle:
-    """Represents a rectangle."""
+    """Represents a rectangle.
+
+    Attributes:
+        number_of_instances (int): The number of Rectangle instances.
+        print_symbol (any): The symbol used for string representation.
+    """
 
     number_of_instances = 0
     print_symbol = "#"
@@ -54,7 +59,7 @@ class Rectangle:
 
     def area(self):
         """Returns:
-            int: The perimeter of this Rectangle"""
+            int: The area of this Rectangle"""
         return self.width * self.height
 
     def perimeter(self):
