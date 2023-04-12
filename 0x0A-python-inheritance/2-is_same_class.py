@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#Vivianne Nyakundi
 """Defines a class checking function."""
 
 
