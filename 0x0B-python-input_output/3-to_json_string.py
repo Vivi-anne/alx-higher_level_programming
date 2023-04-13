@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""
-modules defines a string to JSON function
-"""
+"""module defines a string-to-JSON function."""
 import json
-
 
 
 def to_json_string(my_obj):
