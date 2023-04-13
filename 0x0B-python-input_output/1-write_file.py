@@ -1,10 +1,10 @@
 #!/usr/bin/python
-"""Module defines a writing function to a file"""
+"""Module defines a file-writing function."""
 
 
 def write_file(filename="", text=""):
-    """write string to a text file
-
+    """Write a string to a UTF8 text file.
+    
     Args:
         filename (str): The name of the file to write.
         text (str): The text to write to the file.
