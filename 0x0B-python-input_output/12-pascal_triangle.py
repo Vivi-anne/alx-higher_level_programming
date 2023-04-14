@@ -10,12 +10,16 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    triangles = [[1]]
-    while len(triangles) != n:
-        tri = triangles[-1]
-        tmp = [1]
-        for i in range(len(tri) - 1):
-            tmp.append(tri[i] + tri[i + 1])
-        tmp.append(1)
-        triangles.append(tmp)
-    return 
+    pascal = [[1]]
+    if n >= 2:
+        pascal.append([1, 1])
+    for time in range(n-2):
+        prev = pascal[-1]
+        new_list = [1, 1]
+        index = 1
+        for i in range(0, len(prev)-1):
+            new_list.insert(index, (prev[i] + prev[i+1]))
+            index += 1
+        pascal.append(new_list)
+
+    return pascal
