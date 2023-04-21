@@ -8,7 +8,7 @@ Unittest classes:
     TestRectangle_y - line 331
     TestRectangle_order_of_initialization - line 399
     TestRectangle_area - line 427
-    TestRectangle_update_args - line 535
+    TestRectangle_update_args - line 534
     TestRectangle_update_kwargs - line 673
     TestRectangle_to_dictionary - line 785
 """

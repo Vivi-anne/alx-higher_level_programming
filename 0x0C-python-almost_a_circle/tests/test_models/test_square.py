@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# test_square.py
 """Defines unittests for models/square.py.
+
 Unittest classes:
     TestSquare_instantiation - line 23
     TestSquare_size - line 87
