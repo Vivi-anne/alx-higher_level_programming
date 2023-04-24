@@ -1,14 +1,16 @@
-#!usr/bin/python3
-"""Defines a base model class"""
+#!/usr/bin/python3
+
+"""Defines a base model class."""
 import json
-import turtle
 import csv
+import turtle
 import os
 
 
 class Base:
-     """Represents the base model.
-    This Represents the "base" for all other classes in this project.
+    """Represents the base model.
+
+    This Represents the "base" for all other classes in project.
 
     Private Class Attributes:
         __nb_object (int): Number of instantiated Bases.
@@ -42,7 +44,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """Write the JSON serialization of a list of objects to a file.
-
+        
         Args:
             list_objs (list): A list of inherited Base instances.
         """
@@ -57,7 +59,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """Return the deserialization of a JSON string.
-
+        
         Args:
             json_string (str): A JSON str representation of a list of dicts.
         Returns:
@@ -71,7 +73,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Return a class instantied from a dictionary of attributes.
-
+        
         Args:
             **dictionary (dict): Key/value pairs of attributes to initialize.
         """
@@ -102,6 +104,7 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization of a list of objects to a file.
+        
         Args:
             list_objs (list): A list of inherited Base instances.
         """
@@ -121,9 +124,7 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """Return a list of classes instantiated from a CSV file.
-        
         Reads from `<cls.__name__>.csv`.
-
         Returns:
             If the file does not exist - an empty list.
             Otherwise - a list of instantiated classes.
