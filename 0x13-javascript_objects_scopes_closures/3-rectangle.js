@@ -7,16 +7,13 @@ class Rectangle {
     }
   }
 
-/*
- *@property {method} print - prints the rectangle using the character X
- */
   print () {
     for (let i = 0; i < this.height; i++) {
-      let sRow = '';
+      let r = '';
       for (let j = 0; j < this.width; j++) {
-        sRow += 'X';
+        r += 'X';
       }
-      console.log(sRow);
+      console.log(r);
     }
   }
 }
