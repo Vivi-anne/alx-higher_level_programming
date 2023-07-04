@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-This script sends POST request to given URL
+"""Sends a POST request to a given URL with a given email.
 """
 import sys
 import urllib.parse
@@ -14,4 +13,4 @@ if __name__ == "__main__":
 
     request = urllib.request.Request(url, data)
     with urllib.request.urlopen(request) as response:
-        print(response.read().decode("utf-8")
+        print(response.read().decode("utf-8"))
